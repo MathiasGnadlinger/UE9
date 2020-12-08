@@ -38,22 +38,17 @@ public class MainModel
 
     public String getAnswer (String ans)
     {
-        if (ans.contains(""))
-        {
+        if (ans.equals(""))
             return "I don't understand. Please write something!";
-        }
-        else if(ans.contains("?"))
-    {
-        return get_neutralAnswer();
-    }
         else if(ans.contains("SEW"))
-    {
-        return get_positiveAnswer();
-    }
+            return get_positiveAnswer();
+
         else if (ans.contains("INSY"))
-    {
-        return get_negativeAnswer();
-    }
+            return get_negativeAnswer();
+
+        else if(ans.contains("?"))
+            return get_neutralAnswer();
+
         return ans;
     }
 
