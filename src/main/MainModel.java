@@ -1,6 +1,7 @@
 package main;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class MainModel
 {
@@ -35,7 +36,43 @@ public class MainModel
         negative_answers.add("Very doubtful.");
     }
 
-    
+    public String getAnswer (String ans)
+    {
+        if (ans.contains(""))
+        {
+            return "I don't understand. Please write something!";
+        }
+        else if(ans.contains("?"))
+    {
+        return get_neutralAnswer();
+    }
+        else if(ans.contains("SEW"))
+    {
+        return get_positiveAnswer();
+    }
+        else if (ans.contains("INSY"))
+    {
+        return get_negativeAnswer();
+    }
+        return ans;
+    }
 
 
+    public String get_positiveAnswer()
+    {
+        Random rd = new Random();
+        return positive_answers.get(rd.nextInt(positive_answers.size()));
+    }
+
+    public String get_neutralAnswer()
+    {
+        Random rd = new Random();
+        return neutral_answers.get(rd.nextInt(neutral_answers.size()));
+    }
+
+    public String get_negativeAnswer()
+    {
+        Random rd = new Random();
+        return negative_answers.get(rd.nextInt(negative_answers.size()));
+    }
 }
