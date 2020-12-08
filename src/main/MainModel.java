@@ -2,6 +2,11 @@ package main;
 
 import java.util.ArrayList;
 import java.util.Random;
+/**
+ * @author Mathias Gnadlinger
+ * @version 9, 08.12.2020
+ */
+//Bretbacher Elijah hat mir bei den Methoden geholfen, da ich zu kompliziert dachte und er mir eine leichtere beibrachte
 
 public class MainModel
 {

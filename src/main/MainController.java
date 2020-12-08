@@ -16,7 +16,10 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
+/**
+ * @author Mathias Gnadlinger
+ * @version 9, 08.12.2020
+ */
 public class MainController implements Initializable
 {
     @FXML
@@ -65,5 +68,4 @@ public class MainController implements Initializable
     {
         tf_answer.setText(model.getAnswer(tf_question.getText()));
     }
-
 }

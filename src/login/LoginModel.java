@@ -1,5 +1,8 @@
 package login;
-
+/**
+ * @author Mathias Gnadlinger
+ * @version 9, 08.12.2020
+ */
 public class LoginModel
 {
     String username;

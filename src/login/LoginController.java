@@ -15,7 +15,10 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
+/**
+ * @author Mathias Gnadlinger
+ * @version 9, 08.12.2020
+ */
 public class LoginController implements Initializable
 {
     @FXML
